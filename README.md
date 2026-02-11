@@ -9,8 +9,6 @@ Music communities often rely on scattered groups and informal listings. **PianoE
 - rent gear for short-term needs (events, practice, studio),
 - buy used/new equipment from trusted sellers.
 
-At the same time, this repo is designed to be **job-interview friendly**: it showcases practical engineering decisions and patterns used in real applications.
-
 ---
 
 ## Core features (MVP)
@@ -54,6 +52,3 @@ At the same time, this repo is designed to be **job-interview friendly**: it sho
 - Docker + docker-compose (recommended)
 - CI pipeline (recommended): build + tests + lint
 
----
-
-## Repository structure (suggested)
