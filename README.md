@@ -11,44 +11,17 @@ Music communities often rely on scattered groups and informal listings. **PianoE
 
 ---
 
-## Core features (MVP)
-### Marketplace
-- Browse listings with **search / filters / sorting**
-- Listing details (photos, condition, specs, price)
-- Create/edit listings (seller flow)
-- **Buy** flow (cart + checkout stub / mock payment)
-- **Rent** flow (availability window + rental period pricing)
-
-### Accounts
-- Sign up / sign in
-- Profile page (basic info, addresses)
-- Seller dashboard (my listings, orders/rentals)
-
-### Operations & quality
-- Server-side validation + consistent error responses
-- Pagination for large lists
-- Audit-friendly timestamps (created/updated)
-- API documentation (OpenAPI/Swagger)
-
----
-
 ## Tech stack
 ### Backend
 - Java + Spring Boot
 - PostgreSQL
 - Spring Web (REST), Spring Data JPA (persistence)
-- Validation (Bean Validation)
-- Migrations (Flyway or Liquibase)
-- Auth (JWT recommended)
-- Testing (JUnit 5, Mockito; Testcontainers recommended)
+- Migrations (Flyway)
+- Auth (JWT)
 
 ### Frontend
 - React + Vite
 - TailwindCSS
-- API client (fetch/axios)
-- React Router (recommended)
+- React Router
 
-### DevOps (portfolio-ready)
-- Docker + docker-compose (recommended)
-- CI pipeline (recommended): build + tests + lint
 
