@@ -1,0 +1,2 @@
+# PianoECom
+This e-commerce website, focused on the music tools, display a variety of products, first or second-hand, to buy, rent or sell. Here, musicists, new learners and stores can interact. A place designed for convenience, to keep the musicists community alive!
