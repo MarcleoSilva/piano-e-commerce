@@ -1,4 +1,4 @@
-import Catalogue from "../modules/Catalogue";
+import Catalogue from "../modules/ui/Catalogue";
 
 export default function Home(){
     return(
