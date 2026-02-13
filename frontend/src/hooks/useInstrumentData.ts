@@ -1,6 +1,6 @@
 import axios, { type AxiosPromise } from "axios"
-import type { InstrumentData } from "../data/InstrumentData"
 import { useQuery } from "@tanstack/react-query"
+import type { InstrumentData } from "../modules/data/InstrumentData"
 
 const API_URL = "http://localhost:8080"
 const ENDPOINT = "/instrument"
