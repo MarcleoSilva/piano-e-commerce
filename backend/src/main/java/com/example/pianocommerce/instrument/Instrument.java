@@ -1,6 +1,10 @@
 package com.example.pianocommerce.instrument;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -20,7 +24,7 @@ public class Instrument {
     private String image;
     private Integer price;
 
-    public Instrument(InstrumentRequestDTO data){
+    public Instrument(InstrumentRequestDTO data){ //mapper (transpose data)
         this.name = data.name();
         this.image = data.image();
         this.price = data.price();

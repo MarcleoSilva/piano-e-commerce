@@ -30,7 +30,8 @@ export function CreateModal(){
     const [name, setName] = useState("");
     const [price, setPrice] = useState(0);
     const [image, setImage] = useState("");
-    const {mutate} = useInstrumentDataMutate();
+    const {mutate, isPending, isSuccess} = useInstrumentDataMutate();
+
 
     const submit = () => {
         const instrumentData: InstrumentData = {
@@ -42,10 +43,11 @@ export function CreateModal(){
         cleanSpaces();
     }
 
+    const donePosting = isSuccess ? 'block' : 'hidden';
 
         return(
         <div className="bg-[rgba(0,0,0,0.3)] fixed top-0 left-0
-        h-full w-full flex justify-center">
+        h-full w-full flex justify-center ">
             <div className="border grid grid-cols-1 gap-3 self-center 
             text-center border-gray-200 rounded-lg shadow-md p-5 m-2 w-fit 
             bg-white">
@@ -62,11 +64,16 @@ export function CreateModal(){
                     place-items-center">
                         <button onClick={submit} className=" mt-3 border 
                         shadow-md border-gray-200 p-2 hover:bg-gray-100 
-                        hover:shadow-lg">
-                            Register</button>
+                        hover:shadow-lg rounded-md">
+                            {isPending ? 'Loading...' : 'Register'}</button>
                     </div>
                 </div>
+                    <p className={`border-green-100 border-2 bg-green-200
+                     ${donePosting} mt-5 text-balck opacity-70`}>
+                    The registration was successful!
+                </p>
             </div>
+
         </div>
     )
 }
